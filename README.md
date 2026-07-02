@@ -1,5 +1,4 @@
-# Graph Partitioning & Community Detection via Modularity Optimization
-
+# Fast Louvain Community Detection Algorithm
 A modular, runtime-dynamic Python pipeline implementing a custom local modularity optimization heuristic (the first phase of the Louvain Method) for community detection in complex networks. This project replaces a legacy, static memory C-based implementation with an abstract data pipeline utilizing `networkx` for runtime graph construction and `pandas` for handling arbitrary edge-list inputs.
 
 ## Technical Architecture
@@ -62,4 +61,5 @@ python main.py
 ## Expected Output & Visualization
 
 When executed, the pipeline dynamically computes the network topology and opens an interactive rendering window. Nodes belonging to the same identified community share identical categorical colors, visually proving the local modularity optimization boundaries.
+Example outcome using Karate Club dataset:
 ![Network Partition Output](data/network_partition.png)
